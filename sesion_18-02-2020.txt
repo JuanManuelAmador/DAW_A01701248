@@ -1,0 +1,53 @@
+estrategias de aprendizaje
+peer programming-trabajo en parejas al mismo tiempo
+hacer revisiones de codigo de compañeros
+
+en cass como se usa un estilo que aplique a una clase?
+.estilo}
+
+#id{
+
+MODELO DE CAJA DE LOS CSS
+los navegadores tienen un editor de estilos y contienen un modelo de caja
+la mayoria de elementos usan un modelo de caja"
+
+borde ancho de la celda
+margin espacio entre la celda y los demas elementos
+padding borde de la celda y el propio contenido
+
+
+:hover{
+cuando ocurra el evento hover se le van a aplicar esas reglas de
+estilo
+
+hay dos formas de declarar variables local en java script
+
+let - cuando se declara una variable let solo va a vivir entre las llaves
+que fue declarada
+es muy usada al usarse un ciclo
+
+for(let i=0;i<10;i++){
+}
+
+Tipos de datos en js
+
+number
+string
+boolean		true-false
+undefined	no se sabe el tipo de dato
+null		se sabe el tipo de dato pero no se sabe el valor
+
+usando un archivo externo
+
+<script type= "tex/javascript" src="codigo.js"><script>
+
+
+el script se inserta al final, ya que el documento html este construido
+
+
+console.log(respuesta) 
+
+se pueden asignar a variables funciones
+
+
+
