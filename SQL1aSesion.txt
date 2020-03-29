@@ -1,0 +1,21 @@
+proyeccion disminuye el dominio, regresa menos columnas
+
+Select Clave, Descripcion
+From Materiales
+Where Costo ->= 100
+AND Clave>1300
+
+si no se pone la condicion de igualdad se convierte en producto cartesiano
+
+Select M.Clave, Descripcion, Count (Descricion) 'Total'
+from Materiales as M, Entregan as E
+Where Materiales.clave = Entregan.Clave
+AND Cantidad >=10
+GROUP BY Descripcion
+HAVING Count(Descripcion) > 3
+ORDER BY Descripcion DESC
+
+
+
+
+
