@@ -1,0 +1,76 @@
+llave primaria-> garantiza unicidad de la relacion, de la tupla
+llave alterna-> cuando no se puede garantizar la unicidad en los campos de una tabla
+llave foranea->integridad referencial, que exista en ambas tablas
+
+
+dominio-> Son las columnas
+grado las columnas
+
+p
+grado esta dado por las columnas
+cardinalidad por las filas
+el dominio son los tipos de columnas q contienen
+
+
+Q es relacion
+grado 3
+cardinalidad 3
+
+
+operador de interseccion
+operador binario
+mismo grado y mismo dominio
+no importa la cardinalidad
+resultado son las tuplas que existen en ambas relaciones
+es conmutativo
+
+
+diferencia
+operador binario
+mismo grado y mismo dominio
+no importa la cardinalidad
+No es conmutativo
+
+
+operador de proyeccion
+operador unitario
+seleccina columnas
+las columnas que estoy seleccionando son columnas que estan definidas en la relacion
+
+
+Operador de seleccion
+filtra tuplas (filas)
+operador unario
+no importa el grado, dominio
+se especifica como subindice la condicion que se quiere para la seleccion
+La condicion va sobre el valor de un campo
+
+
+Operador Join Natural
+operador binario
+no importa el grado del dominio
+deben tener al menos una columna en comun, de igualdad
+es muy tardado
+
+
+operador teta join
+join natural con una restriccion
+no deben de tener columna en comun
+
+
+producto cartesiano
+todas las combinaciones entre dos relaciones
+
+AnB
+AuB
+A-b
+A >< B
+A >< condicion B
+SIGMAcondicion A
+PIdescripcionR
+
+
+
+
+	SIGMA
+		clave > 2000 and Precio <100
