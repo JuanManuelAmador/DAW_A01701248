@@ -9,11 +9,15 @@
   </head>
 
   <body>
+    <script src="Lab5_Problema1.js"></script>
     <article>
       <p>
 
-        <input type="text" value="Escribe tu contraseña" onchange="guardar_contraseña()">
+        <input type="password" value="Escribe tu contraseña" id="caja_textoContraseña" onchange="guardar_contraseña()">
 
+      </p>
+      <p>
+        <input type="button" value="Valida tu contraseña" id="boton_validar" onclick="validar_contraseña()">
       </p>
     </article>
 
