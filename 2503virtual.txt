@@ -1,0 +1,14 @@
+
+SELECT M.Descripcion
+From Materiales as M, Proyectos as P, Entregan as E
+Where M.Clave = E.Clave AND E.Numero = P.Numero
+AND P.Denominacion='Vamos Mexico'
+And E.Fecha BETWEEN '01/01/2010' AND '31/12/2010'
+
+
+SELECT
+FROM
+WHERE
+GROUP BY
+HAVING
+SORT BY

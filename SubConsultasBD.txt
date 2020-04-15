@@ -1,0 +1,44 @@
+Película(título, año, duración, encolor, presupuesto, nomestudio, idproductor)
+Elenco(título, año, nombre, sueldo)
+Actor(nombre, dirección, telefono, fechanacimiento, sexo)
+Productor(idproductor, nombre, dirección, teléfono)
+Estudio(nomestudio, dirección) 
+
+1)
+
+Select A.Nombre
+From Elenco E, Actores A
+Where Nombre.E = A.Nombre
+AND Sexo = 'F' AND E.Titulo = 'Las Brujas de Salem'
+
+
+Select Nombre
+From Actores
+WHERE Sexo =  'F' 
+AND Nombre IN
+(SELECT Nombre
+ FROM Elenco WHERE Titulo = 'Las Brujas de Salem')
+
+
+2)Nombres de los actores que aparecen en las peliculas producidas por mgm en 1995
+
+Select Nombre
+From Elenco
+Where Año = '1995'
+AND Titulo IN
+(SELECT Titulo
+ From Pelicula WHERE Estudio='MGM')
+
+3)peliculas que duran mas que 'lo que el viento se llevo' 1939'
+
+Select Titulo
+From Pelicula 
+Where Titulo = 'Lo que el viento se llevo'
+
+4)Productores que han hecho mas peliculas que George Lucas
+---------------------------------------------------------------
+SLN
+
+
+
+

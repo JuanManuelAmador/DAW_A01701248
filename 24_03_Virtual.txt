@@ -1,0 +1,6 @@
+el estado del software se logra a nivel aplicacion
+como funciona el manejo de sesiones
+si el protocolo http es un protocolo sin estado
+se le puede decir al servidor
+
+
