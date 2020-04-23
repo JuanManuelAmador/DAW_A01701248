@@ -1,0 +1,26 @@
+¿Qué hace el primer bloque del código (bloque del IF)?
+Checa si ya existe el procedure y si existe lo elimina
+
+¿Para qué sirve la instrucción GO?
+Para que el sistema se detenga y realice las instrucciones anteriores antes de continuar
+
+¿Explica que recibe como parámetro este Procedimiento y qué tabla modifica? 
+Recibe clave, descripcion, costo e impuesto
+Modifica la tabla materiales
+
+         IF EXISTS (SELECT name FROM sysobjects
+                       WHERE name = 'creaMaterial' AND type = 'P')
+                DROP PROCEDURE creaMaterial
+            GO
+
+            CREATE PROCEDURE creaMaterial
+                IN uclave NUMERIC,
+                IN udescripcion VARCHAR 50,
+                IN ucosto NUMERIC,
+                IN uimpuesto NUMERIC,
+            AS
+                INSERT INTO materiales VALUES(@uclave,@udescripcion,@ucosto,@uimpuesto)
+                
+            GO
+
+
