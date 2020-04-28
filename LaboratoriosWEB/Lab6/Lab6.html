@@ -1,16 +1,67 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Laboratorio 6 Documentos Dinamicos</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Laboratorio 6 Documentos Dinamicos</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<header>
+  este es el header
+</header>
+<body>
+	
 
-  <body>
-    <script src="validadorpw.js"></script>
+	
+	<section>
+    <article class="abc">
+      <h1>
+        LA IMPORTANCIA DE LAS CONTRASEÑAS
+      </h1>
+      <div>
+        <p>
+          ¿Usas tu fecha de cumpleaños o la de una familiar como contraseña? ¿Tienes una serie de números consecutivos como clave de acceso? De acuerdo con la empresa experta en seguridad SplashData, la contraseña “123456” es una de las más usadas por los usuarios, seguida de la palabra “password”, para acceder a diversas plataformas digitales en las que realizan operaciones diariamente, incluidas las empresariales.
+        </p>
+        <p>
+          En un mundo donde la digitalización rige la mayoría de los servicios, es fundamental que las compañías que utilizan, manejan y procesan información, contemplen como parte de su estrategia de negocio, métodos y procedimientos para protegerla, entre los que destacan contar con contraseñas seguras.
+        </p>
+        <p>
+          Hoy en día, los datos son un activo clave y valioso para las organizaciones, ya que su gestión, integración y análisis permite llevar a cabo acciones que reportan más rentabilidad, incrementan las ventas o ayudan a tener una mejor relación y conocimiento de los clientes.
+        </p>
+        <p>
+          Incluso, el 70% de las pequeñas empresas que experimenta una pérdida de datos importante tiende a cerrar sus puertas en un plazo de un año, según la firma PwC. Por ello, cuidarlos se vuelve un deber al interior de las corporaciones.
+        </p>
+        <p>
+          Los controles de acceso es un tema clave para el buen manejo de la información confidencial de una empresa, más si se trata de un área contable, ya que administran datos sensibles como estados financieros, movimiento de capital, registros de nómina, entre otros; asimismo, el departamento de marketing es otro segmento que exige mucha protección, pues cuentan con documentos confidenciales de registro de productos y marcas, además de valiosas estrategias de mercado.
+        </p>
+        <p>
+          <ol >
+            <li >
+              Usa mínimo seis caracteres alfanuméricos, incluyendo mayúsculas, minúsculas y algún carácter especial (#$%&@).
+            </li>
+            <li>
+              Combina la serie de caracteres; mientras más abstracta sea la clave, mejor.
+            </li>
+            <li>
+              Evita repetir contraseñas para entrar a distintos sitios, sistemas y equipos de cómputo.
+            </li>
+            <li>
+              No utilices palabras fáciles de adivinar; por ejemplo, fechas de nacimiento o nombre de la empresa.
+            </li>
+            <li>
+              Recuerda cambiar las contraseñas de manera regular y no las compartas con nadie.
+            </li>
+          </ol>
+        </p>
+        <p id="sorpresa" >
+          Parrafo Sorpresa
+        </p>
+      </div>
+    </article>
+
     <article>
+      <div class="container">
       <p>
 
         <input type="password" value="Escribe tu contraseña" id="caja_textoContraseña" onchange="guardar_contraseña()">
@@ -19,8 +70,20 @@
       <p>
         <input type="button" value="Valida tu contraseña" id="boton_validar" onclick="validar_contraseña()">
       </p>
+      </div>
+
     </article>
 
+    </section>
+       <div class="watermark">
+           Sample Watermark
+    </div> 
+    
+    <footer>
+      Copyright Info
+    </footer>
+
+  <script src="script.js"></script>  
   </body>
 
 </html>

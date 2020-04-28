@@ -1,3 +1,48 @@
+html {
+  background-color: white;
+}
+body {
+  position: initial;
+  background-color: #fff;
+}
+header{
+  background-color:red;
+  margin:0px;
+}
+footer{
+position:initial;
+margin:auto;
+}
+
+h1{
+  margin: 10px 50px 10px 50px;
+}
+
+.abc{
+  background-color:white;
+  margin:0px 50px 20px 50px;
+}
+
+.watermark
+{
+ position:fixed;
+ bottom:5px;
+ right:5px;
+ opacity:0.5;
+ z-index:99;
+ color:white;
+}
+
+/*
+p{
+  position:relative;
+  margin: 0px 50px 10px 50px; 
+  
+}
+*/
+
+
+/*Esto es para la caja de la contraseña*/
 /* Style all input fields */
 input {
  width: 100%;
@@ -57,3 +102,5 @@ input[type=submit] {
  left: -35px;
  content: "&#10006;";
 }
+
+

@@ -1,4 +1,4 @@
-function guardar_contraseña () {
+﻿function guardar_contraseña() {
   /*
   //Otra forma de obtener el value del input
   contraseña_usuario = document.getElementById("caja_textoContraseña").value;
@@ -15,27 +15,48 @@ function guardar_contraseña () {
   */
 }
 
-function validar_contraseña(){
+function validar_contraseña() {
+  let nivelSeguridad = 0;
   let minus = validar_minusculasContraseña();
   let mayus = validar_mayusculasContraseña();
   let size = validar_sizeContraseña();
 
+
   //alert("minus" +minus+"mayus" + mayus+ "size" + size);
+  if (minus) {
+    nivelSeguridad++;
+  }
+  if (mayus) {
+    nivelSeguridad++;
+  }
+  if (size > 8) {
+    nivelSeguridad++;
+  }
+  if (size > 32) {
+    nivelSeguridad++;
+  }
+  if (size > 128) {
+    nivelSeguridad++
+  }
+
+  //Alert nivelSeguridad
+  console.log(nivelSeguridad);
 }
 
-function validar_minusculasContraseña(){
+
+function validar_minusculasContraseña() {
   var numMinus = (contraseña_usuario.match(/[a-z]/g) || []).length;
-  return(numMinus);
+  return (numMinus);
 }
 
-function validar_mayusculasContraseña(){
+function validar_mayusculasContraseña() {
   var numUpper = (contraseña_usuario.match(/[A-Z]/g) || []).length;
-  return(numUpper);
+  return (numUpper);
 }
 
-function validar_sizeContraseña(){
+function validar_sizeContraseña() {
   var sizeContraseña = contraseña_usuario.length;
-  return(sizeContraseña);
+  return (sizeContraseña);
 }
 
 
@@ -48,3 +69,35 @@ function validar_sizeContraseña(){
     not related to other user data (name, address, username, ...)
     not a dictionary word
 */
+
+//Funciones de estilos
+//No se por que si la insercion del script esta al final no carga el parrafo hasta el load
+addEventListener('load', obtenerParrafo);
+//Se agrega el evento click al parrafo, si se da click se dispara el cambio de estilo
+function obtenerParrafo() {
+  addEventListener('click', cambiarEstilo);
+}
+//Cuando se dispara cambia el estilo del parrafo
+function cambiarEstilo() {
+  var elem = document.getElementById("sorpresa").style.fontStyle = "italic";
+}
+
+function prueba (){
+  var myStart = document.getElementById("sorpresa");
+  myStart.addEventListener('mouseover', function(event) {
+  alert("hola");
+  
+
+  }, false);
+}
+
+function parrafoNormal(x) {
+  x.style.color = "black";
+}
+
+function resaltarParrafo(x) {
+  x.style.color = "blue";
+}
+
+
+

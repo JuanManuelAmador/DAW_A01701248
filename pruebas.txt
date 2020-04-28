@@ -1,0 +1,13 @@
+revisar la metodologia del formato q se va a usar
+metemos los datos y evaluemos si con eso es suficiente para tener capacidad para
+conocer en que estado se encuentra cada uno de los requisitos
+1 prueba por escenario
+
+
+Por Prueba*
+--------------------------------
+que le metimos			|
+que esperabamos			|
+y q devolvio el sistema		|
+--------------------------------
+

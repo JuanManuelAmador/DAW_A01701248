@@ -1,0 +1,10 @@
+¿Qué hace la función phpinfo()? Describe y discute 3 datos que llamen tu atención.
+Devuelve informacion del sistema y de la instalacion de PHP en el equipo
+Toda la informacio que contiene acerca de mi sistema, como el procesador y compilador que tiene
+
+
+¿Qué cambios tendrías que hacer en la configuración del servidor para que pudiera ser apto en un ambiente de producción?
+
+
+
+¿Cómo es que si el código está en un archivo con código html que se despliega del lado del cliente, se ejecuta del lado del servidor? Explica.
