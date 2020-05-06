@@ -17,7 +17,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <?php include "./_header.html" ?>
 <?php include "./_nav.html" ?>
 <?php include "./_container.html" ?>
+<?php include "./consultas.php" ?>
+<?php mostrarPrueba() ?>
+<?php mostrarIncidenteStored() ?>
 <?php include "./_footer.html" ?>
+
+
+
+
 <script>
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {

@@ -1,0 +1,60 @@
+//tabla lugares
+CREATE TABLE examenjurasicpark.lugaresincidente (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  nombre VARCHAR(255) NOT NULL,
+  PRIMARY KEY (id)
+)
+ENGINE = INNODB,
+CHARACTER SET utf8mb4,
+COLLATE utf8mb4_general_ci;
+
+
+//Tabla tipos incidente
+CREATE TABLE examenjurasicpark.tipoincidente (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  nombre VARCHAR(255) NOT NULL,
+  PRIMARY KEY (id)
+)
+ENGINE = INNODB,
+CHARACTER SET utf8mb4,
+COLLATE utf8mb4_general_ci;
+
+//Tabla historicos
+CREATE TABLE examenjurasicpark.historico (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  id_lugar INT(11) NOT NULL,
+  id_incidente INT(11) NOT NULL,
+  fecha TIMESTAMP NOT NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (id)
+)
+ENGINE = INNODB,
+AUTO_INCREMENT = 3,
+AVG_ROW_LENGTH = 8192,
+CHARACTER SET utf8mb4,
+COLLATE utf8mb4_general_ci;
+
+ALTER TABLE examenjurasicpark.historico 
+  ADD CONSTRAINT FK_historico_id_incidente FOREIGN KEY (id_incidente)
+    REFERENCES examenjurasicpark.lugaresincidente(id) ON DELETE NO ACTION;
+
+ALTER TABLE examenjurasicpark.historico 
+  ADD CONSTRAINT FK_historico_id_lugar FOREIGN KEY (id_lugar)
+    REFERENCES examenjurasicpark.lugaresincidente(id) ON DELETE NO ACTION;
+
+//procedureMostrar Todo
+CREATE DEFINER = 'root'@'localhost'
+PROCEDURE examenjurasicpark.mostrarTodo()
+BEGIN
+  SELECT L.nombre, I.nombre, H.fecha 
+        FROM examenjurasicpark.lugaresincidente as L, examenjurasicpark.tipoincidente as I,examenjurasicpark.historico as H 
+        WHERE L.id=H.id_lugar AND I.id=H.id_incidente
+        ORDER BY fecha;
+END
+
+//procedure insertarIncidente
+CREATE DEFINER = 'root'@'localhost'
+PROCEDURE examenjurasicpark.insertarIncidente(IN $id_lugar INT(11), IN $id_incidente INT(11))
+BEGIN
+    INSERT INTO historico (id_lugar,id_incidente)
+      VALUES($id_lugar,$id_incidente);
+END

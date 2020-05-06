@@ -1,0 +1,13 @@
+<?php
+
+
+$sql = "INSERT INTO historico (id_lugar, id_incidente)
+VALUES ('1', '1',";
+
+if ($conn->query($sql) === TRUE) {
+echo "New record created successfully";
+} else {
+echo "Error: " . $sql . "<br>" . $conn->error;
+
+$conn->close();
+?>
