@@ -9,3 +9,33 @@
 [Sun Apr 26 23:30:12.990325 2020] [mpm_winnt:notice] [pid 16044:tid 604] AH00354: Child: Starting 150 worker threads.
 [Sun Apr 26 23:36:59.661854 2020] [php7:error] [pid 16044:tid 1844] [client ::1:53598] script 'C:/Users/Pepus Perez Flores/Documents/DAW_A01701248/A01701248_PHP/htdocs/1.php' not found or unable to stat
 [Mon Apr 27 00:10:16.155625 2020] [php7:error] [pid 16044:tid 1856] [client ::1:53757] script 'C:/Users/Pepus Perez Flores/Documents/DAW_A01701248/A01701248_PHP/htdocs/Example1/2.php' not found or unable to stat
+[Mon May 04 21:20:18.750928 2020] [ssl:warn] [pid 7884:tid 612] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon May 04 21:20:18.828848 2020] [core:warn] [pid 7884:tid 612] AH00098: pid file C:/Users/Pepus Perez Flores/Documents/DAW_A01701248/A01701248_PHP/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon May 04 21:20:18.831845 2020] [ssl:warn] [pid 7884:tid 612] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon May 04 21:20:19.023353 2020] [mpm_winnt:notice] [pid 7884:tid 612] AH00455: Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.5 configured -- resuming normal operations
+[Mon May 04 21:20:19.023353 2020] [mpm_winnt:notice] [pid 7884:tid 612] AH00456: Apache Lounge VC15 Server built: Apr 22 2020 11:11:00
+[Mon May 04 21:20:19.023353 2020] [core:notice] [pid 7884:tid 612] AH00094: Command line: 'c:\\users\\pepus perez flores\\documents\\daw_a01701248\\a01701248_php\\apache\\bin\\httpd.exe -d C:/Users/Pepus Perez Flores/Documents/DAW_A01701248/A01701248_PHP/apache'
+[Mon May 04 21:20:19.033342 2020] [mpm_winnt:notice] [pid 7884:tid 612] AH00418: Parent: Created child process 11252
+[Mon May 04 21:20:19.697048 2020] [ssl:warn] [pid 11252:tid 604] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon May 04 21:20:19.776765 2020] [ssl:warn] [pid 11252:tid 604] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon May 04 21:20:19.806830 2020] [mpm_winnt:notice] [pid 11252:tid 604] AH00354: Child: Starting 150 worker threads.
+[Tue May 05 17:07:04.590993 2020] [ssl:warn] [pid 17736:tid 608] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue May 05 17:07:04.671342 2020] [core:warn] [pid 17736:tid 608] AH00098: pid file C:/Users/Pepus Perez Flores/Documents/DAW_A01701248/A01701248_PHP/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue May 05 17:07:04.671342 2020] [ssl:warn] [pid 17736:tid 608] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue May 05 17:07:04.770986 2020] [mpm_winnt:notice] [pid 17736:tid 608] AH00455: Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.5 configured -- resuming normal operations
+[Tue May 05 17:07:04.770986 2020] [mpm_winnt:notice] [pid 17736:tid 608] AH00456: Apache Lounge VC15 Server built: Apr 22 2020 11:11:00
+[Tue May 05 17:07:04.770986 2020] [core:notice] [pid 17736:tid 608] AH00094: Command line: 'c:\\users\\pepus perez flores\\documents\\daw_a01701248\\a01701248_php\\apache\\bin\\httpd.exe -d C:/Users/Pepus Perez Flores/Documents/DAW_A01701248/A01701248_PHP/apache'
+[Tue May 05 17:07:04.770986 2020] [mpm_winnt:notice] [pid 17736:tid 608] AH00418: Parent: Created child process 12164
+[Tue May 05 17:07:05.450655 2020] [ssl:warn] [pid 12164:tid 616] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue May 05 17:07:05.530970 2020] [ssl:warn] [pid 12164:tid 616] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue May 05 17:07:05.570929 2020] [mpm_winnt:notice] [pid 12164:tid 616] AH00354: Child: Starting 150 worker threads.
+[Wed May 06 10:03:59.106698 2020] [ssl:warn] [pid 14008:tid 620] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed May 06 10:03:59.187616 2020] [core:warn] [pid 14008:tid 620] AH00098: pid file C:/Users/Pepus Perez Flores/Documents/DAW_A01701248/A01701248_PHP/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed May 06 10:03:59.189614 2020] [ssl:warn] [pid 14008:tid 620] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed May 06 10:03:59.373426 2020] [mpm_winnt:notice] [pid 14008:tid 620] AH00455: Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.5 configured -- resuming normal operations
+[Wed May 06 10:03:59.373426 2020] [mpm_winnt:notice] [pid 14008:tid 620] AH00456: Apache Lounge VC15 Server built: Apr 22 2020 11:11:00
+[Wed May 06 10:03:59.373426 2020] [core:notice] [pid 14008:tid 620] AH00094: Command line: 'c:\\users\\pepus perez flores\\documents\\daw_a01701248\\a01701248_php\\apache\\bin\\httpd.exe -d C:/Users/Pepus Perez Flores/Documents/DAW_A01701248/A01701248_PHP/apache'
+[Wed May 06 10:03:59.383416 2020] [mpm_winnt:notice] [pid 14008:tid 620] AH00418: Parent: Created child process 11108
+[Wed May 06 10:04:00.067249 2020] [ssl:warn] [pid 11108:tid 612] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed May 06 10:04:00.146928 2020] [ssl:warn] [pid 11108:tid 612] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed May 06 10:04:00.186888 2020] [mpm_winnt:notice] [pid 11108:tid 612] AH00354: Child: Starting 150 worker threads.
