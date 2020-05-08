@@ -538,3 +538,5 @@
 ::1 - - [06/May/2020:12:38:00 -0500] "GET /examen_jurasic2020/index.php HTTP/1.1" 200 4345 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0"
 ::1 - - [06/May/2020:12:38:31 -0500] "GET /examen_jurasic2020/index.php HTTP/1.1" 200 3202 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0"
 ::1 - - [06/May/2020:12:38:47 -0500] "GET /examen_jurasic2020/index.php HTTP/1.1" 200 4345 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0"
+::1 - - [07/May/2020:17:49:14 -0500] "GET /examen_jurasic2020/index.php HTTP/1.1" 200 4345 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0"
+::1 - - [07/May/2020:17:49:15 -0500] "GET /favicon.ico HTTP/1.1" 200 30894 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0"

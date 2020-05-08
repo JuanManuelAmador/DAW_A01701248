@@ -1,0 +1,8 @@
+CREATE TABLE dawbdorg_A01701248.tipoincidente (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  nombre VARCHAR(255) NOT NULL,
+  PRIMARY KEY (id)
+)
+ENGINE = INNODB,
+CHARACTER SET utf8,
+COLLATE utf8_general_ci;
