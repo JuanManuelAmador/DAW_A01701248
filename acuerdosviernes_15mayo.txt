@@ -1,0 +1,5 @@
+labs web
+nuevo reporte heuristica, repasar las heuristicas
+BD - ya esta decente
+Desarrollar un requisito funcional desde 0
+

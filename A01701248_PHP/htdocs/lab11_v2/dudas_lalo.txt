@@ -1,0 +1,4 @@
+¿como funciona el $_SERVER('PHP_SELF);?
+es correcto ponerlo adentro de la forma???
+
+hay otra forma mandando llamar a un archivo php en vez de incluirlo?
