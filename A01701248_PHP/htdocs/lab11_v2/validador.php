@@ -1,47 +1,47 @@
 <?php
 // define variables and set to empty values
-$nameErr = $mailErr = $telerr = $websiteErr = "";
-$name = $mail= $tel = $website = "";
+$nameErr = $emailErr  = $websiteErr = "";
+$name = $email = $tel = $website = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["name"])) {
-    $nameErr = "Name is required";
+    $nameErr = "Escribe un nombre ";
   } else {
     $name = test_input($_POST["name"]);
     // check if name only contains letters and whitespace
     if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-      $nameErr = "Only letters and white space allowed";
+      $nameErr = "Solo letras y espacios en blancos admitidos";
     }
   }
-
-  if (empty($_POST["mail"])) {
-    $emailErr = "Email is required";
+  
+  if (empty($_POST["email"])) {
+    $emailErr = "Un correo es requerido";
   } else {
-    $mail = test_input($_POST["mail"]);
+    $email = test_input($_POST["email"]);
     // check if e-mail address is well-formed
-    if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Invalid email format";
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $emailErr = "Formato de correo invalido";
     }
   }
-
+    
   if (empty($_POST["website"])) {
     $website = "";
   } else {
     $website = test_input($_POST["website"]);
     // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
     if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
-      $websiteErr = "Invalid URL";
+      $websiteErr = "Pagina invalida    ";
     }
   }
 
 
+}
 
-  function test_input($data) {
+function test_input($data) {
   $data = trim($data);
   $data = stripslashes($data);
   $data = htmlspecialchars($data);
   return $data;
 }
-
-}
 ?>
+
