@@ -36,23 +36,23 @@
         </header>
         <?php include "./validador.php" ?>
         <div class="container">
-          <form id="contact" action="<?php $_SERVER['PHP_SELF']; ?>" method="POST">
+          <form novalidate id="contact" action="<?= $_SERVER['PHP_SELF']; ?>" method="POST">
             <h3>Manejo de formularios</h3>
             <h4>Ejemplo de formulario de contacto</h4>
             <fieldset>
-              <input placeholder="Escribe tu nombre" type="text" tabindex="1" name="name"  autofocus>
-              <span class="error"><?php $nameErr ?>  </span>
+              <input placeholder="Escribe tu nombre" type="text" tabindex="1" name="name" value="<?= $name?>" autofocus>
+              <span class="error"><?= $nameErr ?>  </span>
             </fieldset>
             <fieldset>
-              <input placeholder="Your Email Address" type="email" tabindex="2" name="email">
-              <span class="error"><?php $mailErr ?>  </span>
+              <input placeholder="Your Email Address" type="email" tabindex="2" name="email" value= "<?= $email?>">
+              <span class="error"><?= $emailErr ?>  </span>
             </fieldset>
             <fieldset>
               <input placeholder="Your Phone Number" type="tel" tabindex="3" name="tel">
             </fieldset>
             <fieldset>
               <input placeholder="Tu pagina web empieza con with http://" type="url" tabindex="4" name="website">
-              <span class="error"><?php $websiteErr ?>  </span>
+              <span class="error"><?= $websiteErr ?>  </span>
             </fieldset>
             <fieldset>
               <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
