@@ -1,0 +1,39 @@
+Producción (Código de parte, Descripción de parte, Fecha,
+No. de operador, nombre del operador y cantidad producida en Línea 1 Turno 1,
+No. de operador, nombre del operador y cantidad producida en Línea 1 Turno 2,
+No. de operador, nombre del operador y cantidad producida en Línea 1 Turno 3,
+No. de operador, nombre del operador y cantidad producida en Línea 2 Turno 1,
+No. de operador, nombre del operador y cantidad producida en Línea 2 Turno 2,
+No. de operador, nombre del operador y cantidad producida en Línea 2 Turno 3,
+No. de operador, nombre del operador y cantidad producida en Línea 3 Turno 1,
+No. de operador, nombre del operador y cantidad producida en Línea 3 Turno 2,
+No. de operador, nombre del operador y cantidad producida en Línea 3 Turno 3)
+
+Parte(idParte, Nombre,Descripcion)
+Operador(IdOperador, Nombre Operador)
+Turno(IdTurno,NombreTurno)
+Linea(IdLinea, NombreLinea)
+
+
+
+Produccion (idParte, IdOperador, IdTurno, IdLinea, Cantidad, Fecha)
+
+
+
+Una empresa de telefonía maneja la facturación de sus servicios con la siguiente tabla:
+
+Facturación (Nombre del cliente y  Dirección , Fecha y  Hora, Duración,
+Número de teléfono de origen, Entidad federativa de origen, Ciudad de origen,
+Número de teléfono de destino, Entidad federativa de destino, Ciudad de destino,
+Tarifa por minuto entre ciudad de origen y ciudad de destino,
+Fecha de inicio del período de facturación,
+Fecha final del período de facturación)
+
+Estado
+Colonia
+Calle
+Cliente(IdCliente, IdDireccion
+
+
+Llamada(idTelOrigen,idEntidadOrigen,idCiudadOrigen, idTelefonoDestino, idEntidadDestino,idCiudadDestino)
+
