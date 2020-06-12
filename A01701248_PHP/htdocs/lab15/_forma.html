@@ -1,0 +1,25 @@
+
+<div class="form-group">
+    <form novalidate id="contact" action="<?= $_SERVER['PHP_SELF']; ?>" method="POST">
+
+        <h4>Formulario de registro de usuarios</h4>
+
+        <fieldset>
+            <label for="email">Nombre</label>
+            <input class="form-control" placeholder="Juan Manuel" type="text" tabindex="1" name="name" value="<?= $name?>" autofocus>
+            <span class="error"><?= $nameErr ?>  </span>
+        </fieldset>
+        <fieldset>
+            <label for="email">Correo Electronico</label>
+            <input class="form-control" placeholder="correo@hotmail.com" type="email" tabindex="2" name="email" value="<?= $email?>">
+            <span class="error"><?= $emailErr ?>  </span>
+        </fieldset>
+
+
+        <fieldset>
+            <button class="btn btn-primary" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </fieldset>
+    </form>
+
+
+</div>
