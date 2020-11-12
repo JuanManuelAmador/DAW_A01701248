@@ -626,3 +626,13 @@
 [Fri May 29 12:57:16.789959 2020] [php7:notice] [pid 8376:tid 1860] [client ::1:55328] PHP Notice:  Undefined index: email in C:\\Users\\Pepus Perez Flores\\Documents\\DAW_A01701248\\A01701248_PHP\\htdocs\\lab15\\functions_php.php on line 9, referer: http://localhost/lab15/index.php
 [Fri May 29 12:58:06.061584 2020] [php7:notice] [pid 8376:tid 1860] [client ::1:55386] PHP Notice:  Undefined index: name in C:\\Users\\Pepus Perez Flores\\Documents\\DAW_A01701248\\A01701248_PHP\\htdocs\\lab15\\functions_php.php on line 9, referer: http://localhost/lab15/index.php
 [Fri May 29 12:58:06.061584 2020] [php7:notice] [pid 8376:tid 1860] [client ::1:55386] PHP Notice:  Undefined index: email in C:\\Users\\Pepus Perez Flores\\Documents\\DAW_A01701248\\A01701248_PHP\\htdocs\\lab15\\functions_php.php on line 9, referer: http://localhost/lab15/index.php
+[Wed Aug 05 15:35:51.762185 2020] [ssl:warn] [pid 7632:tid 572] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Aug 05 15:35:51.861976 2020] [core:warn] [pid 7632:tid 572] AH00098: pid file C:/Users/Pepus Perez Flores/Documents/DAW_A01701248/A01701248_PHP/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Aug 05 15:35:51.861976 2020] [ssl:warn] [pid 7632:tid 572] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Aug 05 15:35:52.051734 2020] [mpm_winnt:notice] [pid 7632:tid 572] AH00455: Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.5 configured -- resuming normal operations
+[Wed Aug 05 15:35:52.051734 2020] [mpm_winnt:notice] [pid 7632:tid 572] AH00456: Apache Lounge VC15 Server built: Apr 22 2020 11:11:00
+[Wed Aug 05 15:35:52.051734 2020] [core:notice] [pid 7632:tid 572] AH00094: Command line: 'c:\\users\\pepus perez flores\\documents\\daw_a01701248\\a01701248_php\\apache\\bin\\httpd.exe -d C:/Users/Pepus Perez Flores/Documents/DAW_A01701248/A01701248_PHP/apache'
+[Wed Aug 05 15:35:52.071943 2020] [mpm_winnt:notice] [pid 7632:tid 572] AH00418: Parent: Created child process 3048
+[Wed Aug 05 15:35:52.901751 2020] [ssl:warn] [pid 3048:tid 624] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Aug 05 15:35:52.981837 2020] [ssl:warn] [pid 3048:tid 624] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Aug 05 15:35:53.026891 2020] [mpm_winnt:notice] [pid 3048:tid 624] AH00354: Child: Starting 150 worker threads.
